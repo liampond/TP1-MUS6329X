@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 location = "45.509379%2C%20-73.608654"
-api_key = os.gentenv("api_key")
+api_key = os.getenv("api_key")
 
 url = f"https://api.tomorrow.io/v4/weather/realtime?location={location}&apikey={api_key}"
 
