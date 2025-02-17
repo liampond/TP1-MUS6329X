@@ -58,4 +58,4 @@ def main(wait=60, iters=1):
             time.sleep(wait)
             
 if __name__ == "__main__":
-    main(5, 1)
+    main(5, 1)  # Wait (seconds), number of times to query the API
