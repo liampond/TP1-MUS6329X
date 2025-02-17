@@ -323,12 +323,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-35",
-					"linecount" : 3,
+					"linecount" : 8,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 280.0, 15.0, 150.0, 47.0 ],
-					"text" : "For manually inputting training data instead of using the API"
+					"patching_rect" : [ 294.0, 15.0, 150.0, 114.0 ],
+					"text" : "For manually inputting training data instead of using the API.\n\nIf the API stops influencing the parameters, close and reopen the patch without adjusting these sliders."
 				}
 
 			}
@@ -540,13 +540,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-95",
-					"linecount" : 6,
+					"linecount" : 5,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1349.0, 1578.0, 83.0, 89.0 ],
-					"text" : "0.636424 0.410592 0.450051 0.348092 0.238564 0.23469"
+					"patching_rect" : [ 1349.0, 1578.0, 83.0, 76.0 ],
+					"text" : "0.294194 0.685046 1. 0.401417 0.521726 0.845295"
 				}
 
 			}
@@ -2108,7 +2108,7 @@
 
 			}
  ],
-		"originid" : "pat-26",
+		"originid" : "pat-30",
 		"dependency_cache" : [ 			{
 				"name" : "fluid.buf2list.mxo",
 				"type" : "iLaX"
