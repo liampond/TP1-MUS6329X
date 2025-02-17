@@ -5,7 +5,7 @@ import json
 from dotenv import load_dotenv
 from pythonosc import udp_client
 
-def main():
+def main(wait=60, iters=1):
     load_dotenv()
     
     location = "45.509379%2C%20-73.608654"
@@ -22,8 +22,8 @@ def main():
     }
     
     # Query the API once per minute, for five minutes
-    for i in range(5):
-        print(f"\n--- Query iteration {i + 1} ---")
+    for i in range(iters):
+        print(f"\n--- Query iteration {i + 1} out of {iters}---")
         response = requests.get(url, headers=headers)
         if response.status_code != 200:
             print("Error fetching data:", response.status_code)
@@ -48,14 +48,14 @@ def main():
 
             print(f"Temperature: {temperature}, Humidity: {humidity}, Wind Speed: {windSpeed}")
 
-            # Send values to Max using OSC
+            # Send values to Max
             client.send_message("/weather/temperature", temperature)
             client.send_message("/weather/humidity", humidity)
             client.send_message("/weather/windSpeed", windSpeed)
         
         if i < 4:
-            print("Waiting for 60 seconds...\n")
-            time.sleep(60)
+            print(f"Waiting for {wait} seconds...\n")
+            time.sleep(wait)
             
 if __name__ == "__main__":
-    main()
+    main(5, 1)
