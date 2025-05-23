@@ -1,5 +1,7 @@
-Projet (TP1) pour MUS6329X: Projects en informatique musicale à l'Université de Montréal avec Prof. Dominic Thibault.
-Project (TP1) for MUS6329X: Projects in Computer Music at the University of Montréal with Prof. Dominic Thibault.
+# Projet (TP1) pour MUS6329X: Projects en informatique musicale à l'Université de Montréal avec Prof. Dominic Thibault.
+### Project (TP1) for MUS6329X: Projects in Computer Music at the University of Montréal with Prof. Dominic Thibault.
+
+---
 
 This project pulls real-time weather data from the [tomorrow.io](tomorrow.io) API. A small database was manually created that maps temperature, humidity, and wind speed to six parameters of a mono synthesizer. Machine learning was then used to interpolate these values in real-time based on the weather data provided by the API.
 
